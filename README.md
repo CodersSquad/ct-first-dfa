@@ -2,17 +2,18 @@
 
 One of the applications of deterministic finite automata is the implementation of token recognizers in a programming language (known as Lexer in compilers).
 
-In this activity you will have to make a program that receives as input a file with a series of strings, written under certain rules, and will deliver as output a table with the states that the automata went through and whether the string is valid or not.
+In this activity you will have to make a program that receives as input a file with a series of strings, written under certain rules, and will deliver as output table with the states that the automata went through and whether the string is valid or not.
 
 ## General Instructions
 - It's a 2-members team's work
 - The program must be `terminal-based`, written in Golang
 - Write your program in the [dfa.go](./dfa.go) file
+- There's some code that is already implemented, in order to give the time to focus in the real problem
 - Make sure your program compiles and runs
 
 ## Problem-specific Instructions
 
-Make a program that receives as input a text file containing strings, and returns a table with each of the string, its states and if it's a valid or not valid string. Below some extra notes that need to be considered.
+Make a program that receives as input a text file containing strings, and returns yaml-formatted results file with each of the input strings alonside their states and if they're valid or invalid strings. Below some extra notes that need to be considered.
 
 ### Input
 - A [`dfa.yaml`](./dfa.yaml) file with details of your Deterministic Finite Automata Machine
@@ -41,7 +42,7 @@ F: [q1, q2]
 - `F` = Foinal State
 
 ### Output
-- A [`results.yaml`](./results.yaml) with the following format. Make sure you follow the keys and and order of the strings as you read them from the `strings.txt`file, otherwise, you may loose the points. Below an example with 3 words.
+- A [`results.yaml`](./results.yaml) with the following format. Make sure you follow the keys and order of the strings as you read them from the `strings.txt`file, otherwise, you may loose the points. Below an example with 4 words.
 
 ```
 - input: aaba
@@ -91,7 +92,6 @@ You may have some trouble to make it work, since we're using special golang modu
 go mod init CodersSquad/ct-first-dfa
 go mod tidy
 ```
-
 
 ## Grading Policy
 
