@@ -8,7 +8,6 @@ In this activity you will have to make a program that receives as input a file w
 - It's a 2-members team's work
 - The program must be `terminal-based`, written in Golang
 - Write your program in the [dfa.go](./dfa.go) file
-- Make sure to document all requirements to buid/compile and run your program (update the [how-to-build-comple](#how-to-buildcompile) and [how to run](#how-to-run) sections)
 - Make sure your program compiles and runs
 
 ## Problem-specific Instructions
@@ -78,13 +77,19 @@ F: [q1, q2]
   valid: true
 ```
 
-### 
-
 ### Command Line arguments
 
-Your program needs to be run as:
+The program should run as:
 ```
 go run dfa.go -dfa dfa.yaml -input strings.txt -output results.txt
+```
+
+### How to buid/run the first time
+You may have some trouble to make it work, since we're using special golang modules. Below the commands to prepare your environment, in case that you have trouble running the `go run` command 
+
+```
+go mod init CodersSquad/ct-first-dfa
+go mod tidy
 ```
 
 
