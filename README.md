@@ -82,7 +82,7 @@ F: [q1, q2]
 
 The program should run as:
 ```
-go run dfa.go -dfa dfa.yaml -input strings.txt -output results.txt
+go run dfa.go -dfa dfa.yaml -input strings.txt -output results.yaml
 ```
 
 ### How to buid/run the first time
